@@ -1,9 +1,7 @@
-import { useState } from "react"
-import { createBrowserRouter } from "react-router-dom"
-import Login from "../components/Login"
+import Login from "../pages/Login"
 export let routes = [
 	{
-		path:'/',
-		Element: <Login/>,
+		path: "/",
+		element: <Login/>, // Cambiado de Element a element
 	}
 ]
