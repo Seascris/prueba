@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: "Work Sans", sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+    background: #f7f7f7;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+h2 {
+    color: #444;
+    margin-top: 32px;
+    margin-bottom: 12px;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: flex-start;
+    margin-bottom: 24px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+    padding: 18px 22px;
+    min-width: 220px;
+    max-width: 300px;
+    flex: 1 1 220px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.13);
+}
+
+.form-cita {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    margin-top: 10px;
+    background: #fff;
+    padding: 18px 22px;
+    border-radius: 8px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.07);
+}
+
+.form-cita input[type="text"],
+.form-cita input[type="date"] {
+    padding: 8px 10px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font-size: 1rem;
+    flex: 1 1 150px;
+}
+
+.form-cita button {
+    .button-universal {
+        background: #1976d2;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 9px 18px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.2s;
+        margin: 4px 0;
+    }
+    
+    .button-universal:hover:not(:disabled) {
+        background: #125ea8;
+    }
+    
+    .button-text-primary {
+        color: #fff;
+    }
+    
+    .button-text-danger {
+        color: #ff5252;
+    }
+    
+    .button-text-warning {
+        color: #ffb300;
+    }
+    
+    .button-text-success {
+        color: #69f0ae;
+    }
+}
+
+.form-cita button:disabled {
+    background: #90caf9;
+    cursor: not-allowed;
+}
+
+.form-cita button:hover:not(:disabled) {
+    background: #125ea8;
+}
+
+.error {
+    color: #d32f2f;
+    background: #ffeaea;
+    border: 1px solid #f8bcbc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 400px;
+}
+.button-universal {
+    background: #00b8d4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 18px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin: 4px 0;
+}
+
+.button-universal:hover:not(:disabled) {
+    background: #00a0b8;
+}
+
+.button-text-primary {
+    color: #fff;
+}
